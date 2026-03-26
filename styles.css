@@ -1,0 +1,230 @@
+:root{
+    --cor-de-fundo: #01080E;
+    --cor-de-fundo2:#132E35;
+    --cor-do-botao: #81FE88;
+    --cor-do-botao2: #171D1F;
+    --cor-do-titulo: #FFFFFF;
+    --cor-de-fundo3: #888888;
+    --cor-de-fundo4: #3E3E3F;
+    --cinza-claro: #BCBCBC;
+    --offwhite: #E1E1E1;
+    --font-principal: "Prompt", sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-titulo);
+    font-family: var(--font-principal);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+aside{
+    background-color: var(--cor-do-botao2);
+    border-radius: 10px;
+    height: 100%;
+    padding: 40px 16px;
+    text-align: center;   
+}
+
+.lista_links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.lista_links li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-de-fundo3);
+    font-size: 22px;
+}
+
+.lista_links li:first-of-type a{
+    color: var(--cor-do-botao);
+}
+
+.link_destaque{
+    border: 1px solid var(--cor-do-botao);
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+main {
+    background-color: var(--cor-do-botao2);
+    border-radius: 10px;
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+}
+
+h2{
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form div label {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form div input, textarea{
+    width: 100%;
+    padding: 8px 16px;
+    background-color: var(--cor-de-fundo3);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-principal );
+    line-height: 22,5px;
+}
+
+form div input {
+    height: 39px;
+}
+
+textarea{
+    height: 161pxs;
+}
+
+.lista_tags li {
+    display: flex;
+    background-color: var(--cor-de-fundo3);
+    color: var(--cor-de-fundo);
+    gap: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.container_botao {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.lista_tags{
+    display: flex;
+}
+
+.container_botao button{
+    width: 50%;
+    padding: 12px 32px 12px 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.botao_descartar{
+    background-color: var(--cor-do-botao2);
+    color: var(--cor-do-botao);
+    border: 1px solid var(--cor-do-botao);
+    position: relative;
+}
+
+.botao_descartar::after{
+    content: "";
+    background-image: url("./img/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.botao_publicar{
+    background-color: var(--cor-do-botao);
+    color: var(--cor-de-fundo3);
+    border: 1px solid var(--cor-do-botao);
+    position: relative;
+}
+
+.botao_publicar::after{
+    content: "";
+    background-image: url("./img/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.container_decricao{
+    width: 422px;
+}
+
+.main_imagem{
+    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container_imagem{
+    height: 368px;
+    padding: 24px 16px;
+    background-color: var(--cor-de-fundo3);
+    border-radius: 8px;
+}
+
+.container_upload_imagem button{
+    margin: 16px 0 8px 0;
+    background-color: var(--cor-do-botao2);
+    border: 1px solid var(--cor-de-fundo3);
+    border-radius: 8px;
+    color: var(--cor-de-fundo3);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+
+.container_upload_imagem button::after{
+    content: "";
+    background-image: url(./img/upload.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.container_imagem_nome {
+    display: flex;
+    gap: 8px;
+    color: var(--cor-de-fundo3);
+    font-size: 15px;
+}
